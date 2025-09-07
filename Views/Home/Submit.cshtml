@@ -1,0 +1,40 @@
+﻿<link rel="stylesheet" href="~/css/nav.css" />
+<ul>
+    <li> <a href=@Url.Action("Dashboard","HOME")>Dashboard </a></li>
+    <li><a href=@Url.Action("Submit","HOME")>Submit claim </a></li>
+    <li><a href=@Url.Action("History", "HOME")>Claim History</a></li>
+    <li><a href=@Url.Action("Profile","HOME")>Profile</a></li>
+</ul>
+
+
+<link rel="stylesheet" href="~/css/submit.css" />
+<form method=" post" action="/Home/Submit">
+    <label for="text">Facally Name </label>
+    <input type="text" id="Facally Name" name="Facally Name" required />
+    <label for="text">Module </label>
+    <input type="text" id="Module" name="Module" required />
+    <label for="Email">Hour worked </label>
+    <input type="number" id="hour" name="hour" required />
+    <br />
+    <label for="number">Hourly rate</label>
+    <input type="number" id="hourly" name="hourly" required />
+    <br />
+    <label for="text">Total Amount </label>
+    <input type="text" id="Amount" name="Amount" required />
+    <br />
+    <input type="submit" value="claim" />
+
+</form>
+
+<p>Recent cliams</p>
+<table>
+   
+    <tr>
+        <th>Facally Name</th>
+        <th>Module</th>
+        <th>Hour worked</th>
+        <th>Hourly rate</th>
+        <th>Total Amount</th>
+    </tr>
+
+</table>
