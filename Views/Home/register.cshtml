@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" href="~/css/log_sign.css" />
+<form>
+    <h2>Register</h2>
+    <label for="username">Name</label>
+    <input type="text" id="username" name="username" required />
+    
+
+    <br />
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" required />
+
+    <br />
+    <label for="Password">Password</label>
+    <input type="text" id="Password" name="Password" required />
+
+    <br />
+    <select>
+        <option>Select role</option>
+        <option>Lect</option>
+        <option>PC</option>
+        <option>PM</option>
+    </select>
+    <br />
+    <input type="submit" value="Register" />
+    <a href=@Url.Action("Index","HOME")>Login </a>
+
+</form>
